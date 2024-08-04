@@ -9,7 +9,7 @@ const Navbar = () => {
 const [nav, setNav] = useState(false)
 
   return (
-    <div className='max-w-[1640px] flex lg:justify-center  gap-2 flex-wrap lg:gap-20 items-center p-4 sticky top-0 z-50 bg-white h-[100px] shadow-md shadow-black/30'>
+    <div className='max-w-[1640px] flex lg:justify-center  gap-2 flex-wrap lg:gap-20 items-center p-4 sticky top-0 z-50 bg-white lg:h-[100px] h-[120px]  shadow-md shadow-black/30'>
       {/* Left side */}
       <div className='flex items-center gap-16 lg:gap-10'>
         <div onClick={()=> setNav(!nav)} className='cursor-pointer justify-start'>
@@ -22,7 +22,7 @@ const [nav, setNav] = useState(false)
       </div>
 
       {/* Search Input */}
-      <div className='bg-gray-200 rounded-full flex items-center px-2 w-[100%] mt-8 lg:mt-0 lg:w-[500px]'>
+      <div className='bg-gray-200 rounded-full flex items-center px-2 w-[100%] mt-2 lg:mt-0 lg:w-[500px]'>
         <AiOutlineSearch size={25} />
         <input
           className='bg-transparent p-2 w-full focus:outline-none'
