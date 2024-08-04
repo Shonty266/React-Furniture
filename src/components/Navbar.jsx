@@ -9,20 +9,20 @@ const Navbar = () => {
 const [nav, setNav] = useState(false)
 
   return (
-    <div className='max-w-[1640px]  flex justify-center gap-20 items-center p-4'>
+    <div className='max-w-[1640px] flex lg:justify-center  gap-2 flex-wrap lg:gap-20 items-center p-4 sticky top-0 z-50 bg-white h-[100px] shadow-md shadow-black/30'>
       {/* Left side */}
-      <div className='flex items-center gap-10'>
-        <div onClick={()=> setNav(!nav)} className='cursor-pointer'>
+      <div className='flex items-center gap-16 lg:gap-10'>
+        <div onClick={()=> setNav(!nav)} className='cursor-pointer justify-start'>
           <AiOutlineMenu size={30} />
         </div>
-        <h1 className='text-2xl flex lg:text-3xl px-2 cursor-pointer'>
+        <h1 className='text-2xl flex lg:text-3xl px-2 cursor-pointer text-center'>
         Graceful <span className='font-bold ml-2 text-orange-600'>Interiors</span>
         </h1>
     
       </div>
 
       {/* Search Input */}
-      <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]'>
+      <div className='bg-gray-200 rounded-full flex items-center px-2 w-[100%] mt-8 lg:mt-0 lg:w-[500px]'>
         <AiOutlineSearch size={25} />
         <input
           className='bg-transparent p-2 w-full focus:outline-none'
