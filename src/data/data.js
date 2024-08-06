@@ -124,7 +124,7 @@ export const data = [
     {
       id: 5,
       name: 'Beds',
-      image: '', // Replace with actual image URL
+      image: 'https://img.freepik.com/free-vector/realistic-black-white-bedroom_52683-75121.jpg?uid=R137628149&ga=GA1.1.55013926.1719122392&semt=sph', // Replace with actual image URL
     },
     {
       id: 6,
